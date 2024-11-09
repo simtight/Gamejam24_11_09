@@ -254,7 +254,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -591,6 +591,7 @@ Transform:
   m_GameObject: {fileID: 99245967}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -7.220622, y: -1.2887303, z: 0.06840221}
   m_LocalScale: {x: 0.3, y: 10.599847, z: 1}
   m_ConstrainProportionsScale: 0
@@ -664,6 +665,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+=======
+  m_LocalPosition: {x: -12.646078, y: -0.37657437, z: 9.954489}
+  m_LocalScale: {x: 0.3, y: 10.599847, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2032674445}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &137701868
 PrefabInstance:
@@ -915,11 +923,54 @@ Transform:
   m_GameObject: {fileID: 238153646}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 3.4029775, y: 2.8736696, z: 0.06840221}
   m_LocalScale: {x: 13.536127, y: 0.19926499, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595070874}
+=======
+  m_LocalPosition: {x: -2.022478, y: 3.7858255, z: 9.954489}
+  m_LocalScale: {x: 13.536127, y: 0.19926499, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 511697934}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302062803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302062804}
+  m_Layer: 0
+  m_Name: FrameIn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302062804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302062803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5360782, y: 0.3752745, z: -9.954489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1401055014}
+  - {fileID: 683009398}
+  - {fileID: 656329631}
+  - {fileID: 1321871910}
+  m_Father: {fileID: 0}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &249737615
 PrefabInstance:
@@ -1138,11 +1189,63 @@ Transform:
   m_GameObject: {fileID: 323886619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 1.8938774, y: -6.4374304, z: 0.06840221}
   m_LocalScale: {x: 18.370062, y: 0.3014, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595070874}
+=======
+  m_LocalPosition: {x: -3.5315783, y: -5.5252748, z: 9.954489}
+  m_LocalScale: {x: 18.370062, y: 0.3014, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2032674445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &385435554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385435556}
+  - component: {fileID: 385435555}
+  m_Layer: 0
+  m_Name: FrameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &385435555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385435554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841441305482a0c42bfeba049594c079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &385435556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385435554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5360782, y: 0.3752745, z: -9.954489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &402797642
 GameObject:
@@ -1296,6 +1399,7 @@ Transform:
   m_GameObject: {fileID: 402797642}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 11.069378, y: -1.2978303, z: 0.06840221}
   m_LocalScale: {x: 0.43491003, y: 10.5832615, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1480,6 +1584,15 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 340e82609424aba49b4975b17e901a67, type: 3}
 --- !u!1 &595070873
+=======
+  m_LocalPosition: {x: 5.643921, y: -0.38567385, z: 9.954489}
+  m_LocalScale: {x: 0.43491003, y: 10.5832615, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2032674445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &511697933
+>>>>>>> Gamejam24_11_09/stagecreate
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1487,20 +1600,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 595070874}
   m_Layer: 0
   m_Name: Wall
+=======
+  - component: {fileID: 511697934}
+  m_Layer: 0
+  m_Name: FrameMiddel
+>>>>>>> Gamejam24_11_09/stagecreate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &595070874
+=======
+--- !u!4 &511697934
+>>>>>>> Gamejam24_11_09/stagecreate
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 595070873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1512,14 +1636,26 @@ Transform:
   - {fileID: 402797646}
   - {fileID: 323886623}
   - {fileID: 99245971}
+=======
+  m_GameObject: {fileID: 511697933}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5360782, y: 0.41, z: -9.954489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+>>>>>>> Gamejam24_11_09/stagecreate
   - {fileID: 238153650}
   - {fileID: 66930694}
   - {fileID: 1473978340}
   - {fileID: 15688808}
+<<<<<<< HEAD
   - {fileID: 1401055014}
   - {fileID: 683009398}
   - {fileID: 656329631}
   - {fileID: 1321871910}
+=======
+>>>>>>> Gamejam24_11_09/stagecreate
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &596531562
@@ -1779,11 +1915,19 @@ Transform:
   m_GameObject: {fileID: 656329627}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 4.344777, y: -2.5200303, z: 0.06840221}
   m_LocalScale: {x: 10.342642, y: 0.13997082, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595070874}
+=======
+  m_LocalPosition: {x: -1.0806782, y: -1.6078745, z: 9.954489}
+  m_LocalScale: {x: 10.342642, y: 0.13997082, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 302062804}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683009394
 GameObject:
@@ -1937,11 +2081,19 @@ Transform:
   m_GameObject: {fileID: 683009394}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 9.432077, y: -0.13323033, z: 0.06840221}
   m_LocalScale: {x: 0.16890487, y: 4.91489, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595070874}
+=======
+  m_LocalPosition: {x: 4.0066214, y: 0.7789254, z: 9.954489}
+  m_LocalScale: {x: 0.16890487, y: 4.91489, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 302062804}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &721477096 stripped
 GameObject:
@@ -2487,11 +2639,19 @@ Transform:
   m_GameObject: {fileID: 1321871906}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.7475226, y: -0.12903023, z: 0.06840221}
   m_LocalScale: {x: 0.16890487, y: 4.9225917, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595070874}
+=======
+  m_LocalPosition: {x: -6.1729784, y: 0.7831255, z: 9.954489}
+  m_LocalScale: {x: 0.16890487, y: 4.9225917, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 302062804}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1401055010
 GameObject:
@@ -2645,11 +2805,19 @@ Transform:
   m_GameObject: {fileID: 1401055010}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 4.339177, y: 2.2632697, z: 0.06840221}
   m_LocalScale: {x: 10.334499, y: 0.13997082, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595070874}
+=======
+  m_LocalPosition: {x: -1.0862782, y: 3.1754255, z: 9.954489}
+  m_LocalScale: {x: 10.334499, y: 0.13997082, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 302062804}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440357889 stripped
 GameObject:
@@ -2813,11 +2981,19 @@ Transform:
   m_GameObject: {fileID: 1473978336}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 3.4104774, y: -3.9356303, z: 0.06840221}
   m_LocalScale: {x: 13.546793, y: 0.19926499, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595070874}
+=======
+  m_LocalPosition: {x: -2.0149782, y: -3.0234745, z: 9.954489}
+  m_LocalScale: {x: 13.546793, y: 0.19926499, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 511697934}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1630722626
 PrefabInstance:
@@ -3020,11 +3196,19 @@ Transform:
   m_GameObject: {fileID: 1875251172}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 1.8838774, y: 3.8625698, z: 0.06840221}
   m_LocalScale: {x: 18.355598, y: 0.3014, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 595070874}
+=======
+  m_LocalPosition: {x: -3.5415783, y: 4.7747254, z: 9.954489}
+  m_LocalScale: {x: 18.355598, y: 0.3014, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2032674445}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1875251175
 Rigidbody2D:
@@ -3265,7 +3449,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &2084527012
+=======
+--- !u!1 &2032674444
+>>>>>>> Gamejam24_11_09/stagecreate
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3273,15 +3461,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 2084527014}
   - component: {fileID: 2084527013}
   m_Layer: 0
   m_Name: "\u5272\u308C\u305F\u30AC\u30E9\u30B9"
+=======
+  - component: {fileID: 2032674445}
+  m_Layer: 0
+  m_Name: FrameOut
+>>>>>>> Gamejam24_11_09/stagecreate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!212 &2084527013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3335,11 +3530,15 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2084527014
+=======
+--- !u!4 &2032674445
+>>>>>>> Gamejam24_11_09/stagecreate
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2084527012}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3347,6 +3546,19 @@ Transform:
   m_LocalScale: {x: 3.5556602, y: 3.8552432, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+=======
+  m_GameObject: {fileID: 2032674444}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5360782, y: 0.3752745, z: -9.954489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1875251174}
+  - {fileID: 402797646}
+  - {fileID: 323886623}
+  - {fileID: 99245971}
+>>>>>>> Gamejam24_11_09/stagecreate
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
@@ -3356,6 +3568,7 @@ SceneRoots:
   - {fileID: 1910639321}
   - {fileID: 595070874}
   - {fileID: 1740284091}
+<<<<<<< HEAD
   - {fileID: 137701868}
   - {fileID: 1150936277}
   - {fileID: 596531562}
@@ -3366,3 +3579,9 @@ SceneRoots:
   - {fileID: 1630722626}
   - {fileID: 249737615}
   - {fileID: 2084527014}
+=======
+  - {fileID: 2032674445}
+  - {fileID: 511697934}
+  - {fileID: 302062804}
+  - {fileID: 385435556}
+>>>>>>> Gamejam24_11_09/stagecreate
