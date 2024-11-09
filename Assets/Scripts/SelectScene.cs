@@ -24,8 +24,8 @@ public class SelectScene : MonoBehaviour
         //ステージ３のシーン名入力
         //SceneManager.LoadScene(4);
     }
-    public void ToStageSelect() 
+    public void ToTitle() 
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
