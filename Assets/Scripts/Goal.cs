@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
 
-    [SerializeField] private GameObject m_player;
-    [SerializeField] private GameObject m_goalTextObject;
+    [SerializeField] private Collider2D m_player;
+    [SerializeField] private TextMeshProUGUI m_goalText;
     // Start is called before the first frame update
     void Start()
     {
-        Text m_goalText = m_goalTextObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -20,11 +20,9 @@ public class Goal : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        //コライダーが当たったら最初に呼ばれる
-        //collisionに相手側の情報が格納される。
-        Debug.Log(collision.gameObject.name);
-        m_goalTextObject = collision.gameObject;
+        Debug.Log("test");
+        m_goalText.SetText("Goal");
     }
 }
