@@ -11,6 +11,7 @@ public class pause : MonoBehaviour
     {
         panel.SetActive(false);
         isPause = false;
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame

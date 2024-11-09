@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SelectScene : MonoBehaviour
 {
-    public void TitleToStageSelectButton()
+    public void ToStageSelect()
     {
         SceneManager.LoadScene(1);
     }
@@ -26,6 +26,10 @@ public class SelectScene : MonoBehaviour
     }
     public void ToTitle() 
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Title");
+    }
+    public void ToApplicationQuit()
+    {
+        Application.Quit();
     }
 }

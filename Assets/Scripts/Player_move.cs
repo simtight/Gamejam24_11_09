@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player_move : MonoBehaviour
 {
-    [SerializeField] GameObject m_player;
+    [SerializeField] private CircleCollider2D m_collider;
+    [SerializeField] private GameObject m_player;
     
     Rigidbody2D m_Rigidbody;
 
@@ -30,7 +31,7 @@ public class Player_move : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision == m_collider)
         {
             x = 0;
             y = 0;
