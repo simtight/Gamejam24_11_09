@@ -10,6 +10,7 @@ public class Goal : MonoBehaviour
 
     [SerializeField] private Collider2D m_player;
     [SerializeField] private CanvasGroup goalBackgroundImageCanvasGroup;
+    [SerializeField] private Canvas goalCanvas;
 
     private float m_timer;
     private float fadeDuration = 1f;
@@ -35,6 +36,7 @@ public class Goal : MonoBehaviour
     {
         if(m_player == collision)
         {
+            goalCanvas.gameObject.SetActive(true);
             clearFLG = true;
         }
     }
