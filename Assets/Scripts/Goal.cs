@@ -1,30 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
 
-    [SerializeField] private GameObject m_player;
-    [SerializeField] private GameObject m_goalTextObject;
+    [SerializeField] private Collider2D m_player;
+    [SerializeField] private CanvasGroup goalBackgroundImageCanvasGroup;
+
+    private float m_timer;
+    private float fadeDuration = 1f;
+
+
+    private bool clearFLG = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        Text m_goalText = m_goalTextObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (clearFLG)
+        {
+            GoalPerformance();
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        //コライダーが当たったら最初に呼ばれる
-        //collisionに相手側の情報が格納される。
-        Debug.Log(collision.gameObject.name);
-        m_goalTextObject = collision.gameObject;
+        if(m_player == collision)
+        {
+            clearFLG = true;
+        }
+    }
+
+    private void GoalPerformance()
+    {
+        m_timer += Time.deltaTime;
+        
+        goalBackgroundImageCanvasGroup.alpha = m_timer / fadeDuration;
+
     }
 }
