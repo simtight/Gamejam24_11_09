@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 1216082161}
   - component: {fileID: 1216082160}
   - component: {fileID: 1216082159}
-  - component: {fileID: 1216082158}
+  - component: {fileID: 1216082162}
   m_Layer: 5
   m_Name: stage1
   m_TagString: Untagged
@@ -693,18 +693,6 @@ RectTransform:
   m_AnchoredPosition: {x: -521, y: -96.00003}
   m_SizeDelta: {x: 300, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1216082158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216082156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9f5af85d837f764da8cba3d299803fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1216082159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,7 +737,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1216082158}
+      - m_Target: {fileID: 1216082162}
         m_TargetAssemblyTypeName: SelectScene, Assembly-CSharp
         m_MethodName: StageSelectOne
         m_Mode: 1
@@ -799,6 +787,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216082156}
   m_CullTransparentMesh: 1
+--- !u!114 &1216082162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216082156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f5af85d837f764da8cba3d299803fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1462633356
 GameObject:
   m_ObjectHideFlags: 0
