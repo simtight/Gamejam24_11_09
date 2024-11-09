@@ -7,7 +7,9 @@ using UnityEngine;
 public class PlayerBoxGrab : MonoBehaviour
 {
     [SerializeField] private CircleCollider2D grabPoint;
+    [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private float speed;
     private GameObject hitCollider;
     private bool canGrab = false;
     private bool isRight = false;
@@ -23,6 +25,7 @@ public class PlayerBoxGrab : MonoBehaviour
         isUp = false;
         if (Input.GetKey(KeyCode.LeftShift))
         {
+            
             canGrab = true;
         }
         else
@@ -50,9 +53,71 @@ public class PlayerBoxGrab : MonoBehaviour
 
     private void FixedUpdate()
     {
+        rb.velocity = Vector3.zero;
+        boxCollider.offset = Vector2.zero;
+        boxCollider.size = new Vector2(0.2f, 0.2f);
+        if(!canGrab&&hitCollider != null)
+        {
+            hitCollider.GetComponent<BoxCollider2D>().size = new Vector2(1f, 1f);
+        }
         if (canGrab&&hitCollider!=null)
         {
+            Debug.Log("Grab");
             hitCollider.transform.position = new Vector3(this.transform.position.x + grabPoint.offset.x, this.transform.position.y + grabPoint.offset.y, 0);
+            hitCollider.GetComponent<BoxCollider2D>().size = new Vector2(0.2f, 0.2f);
+            
+            if(grabPoint.offset.x > 0)
+            {
+                boxCollider.offset = new Vector2(grabPoint.offset.x+0.45f,grabPoint.offset.y);
+                boxCollider.size = new Vector2(0.1f, 1f);
+                if (isRight)
+                {
+                    rb.velocity = new Vector3(speed, 0, 0);
+                }
+                else if(isLeft)
+                {
+                    rb.velocity = new Vector3(-speed, 0, 0);
+                }
+            }
+            else if(grabPoint.offset.x < 0)
+            {
+                boxCollider.offset = new Vector2(grabPoint.offset.x - 0.45f, grabPoint.offset.y);
+                boxCollider.size = new Vector2(0.1f, 1f);
+                if (isRight)
+                {
+                    rb.velocity = new Vector3(speed, 0, 0);
+                }
+                else if (isLeft)
+                {
+                    rb.velocity = new Vector3(-speed, 0, 0);
+                }
+            }
+            else if(grabPoint.offset.y > 0)
+            {
+                boxCollider.offset = new Vector2(grabPoint.offset.x, grabPoint.offset.y+0.45f);
+                boxCollider.size = new Vector2(1f, 0.1f);
+                if (isUp)
+                {
+                    rb.velocity = new Vector3(0,speed, 0);
+                }
+                else if (isDown)
+                {
+                    rb.velocity = new Vector3(0, -speed, 0);
+                }
+            }
+            else if(grabPoint.offset.y < 0)
+            {
+                boxCollider.offset = new Vector2(grabPoint.offset.x, grabPoint.offset.y - 0.45f);
+                boxCollider.size = new Vector2(1f, 0.1f);
+                if (isUp)
+                {
+                    rb.velocity = new Vector3(0, speed, 0);
+                }
+                else if (isDown)
+                {
+                    rb.velocity = new Vector3(0, -speed, 0);
+                }
+            }
         }
         else
         {
@@ -60,29 +125,46 @@ public class PlayerBoxGrab : MonoBehaviour
             if (isRight)
             {
                 Debug.Log("Right");
-                grabPoint.offset = new Vector2(1.0f, 0);
+                grabPoint.offset = new Vector2(1.1f, 0);
+                rb.velocity = new Vector3(speed, 0, 0);
             }
             else if(isLeft)
             {
                 Debug.Log("Left");
-                grabPoint.offset = new Vector2(-1.0f, 0);
-            }else if (isUp)
+                grabPoint.offset = new Vector2(-1.1f, 0);
+                rb.velocity = new Vector3(-speed, 0, 0);
+
+            }
+            else if (isUp)
             {
-                grabPoint.offset= new Vector2(0f, 1.0f);
-            }else if(isDown)
+                grabPoint.offset= new Vector2(0f, 1.1f);
+                rb.velocity = new Vector3(0, speed, 0);
+            }
+            else if(isDown)
             {
-                grabPoint.offset = new Vector2(0.0f, -1.0f);
+                grabPoint.offset = new Vector2(0.0f, -1.1f);
+                rb.velocity = new Vector3(0, -speed, 0);
             }
         }
     }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        hitCollider = collision.gameObject;
+        if (collision.gameObject.tag == "Box")
+        {
+            Debug.Log("test");
+            hitCollider = collision.gameObject;
+            
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        hitCollider = null;
+        if (collision.gameObject.tag == "Box")
+        {
+            hitCollider = null;
+            collision.gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1f, 1f);
+        }
     }
 
 }
