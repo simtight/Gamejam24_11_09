@@ -6,10 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/TitleScene.unity
     guid: e60e4e64cd2a1c147b027005a5129ecf
   - enabled: 1
     path: Assets/Scenes/StageSelect.unity
+=======
+    path: Assets/Title.unity
+    guid: 69a1776ac70f03c45a5a7266f9a6aad3
+  - enabled: 1
+    path: Assets/StageSelect.unity
+>>>>>>> Gamejam24_11_09/stageSelect
     guid: 9d92a9bd422904443948d0d5368a90bc
   - enabled: 1
     path: Assets/Scenes/stagecreate.unity
