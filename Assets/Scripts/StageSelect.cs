@@ -8,14 +8,16 @@ public class StageSelect : MonoBehaviour
 {
     public void StageSelectButtonPressedOne()
     {
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene("stagecreate");
     }
     public void StageSelectButtonPressedTwo()
     {
-        SceneManager.LoadScene("Stage2");
+        //ステージ２のシーン名入力
+        //SceneManager.LoadScene("Stage2");
     }
     public void StageSelectButtonPressedThree()
     {
-        SceneManager.LoadScene("Stage3");
+        //ステージ３のシーン名入力
+        //SceneManager.LoadScene("Stage3");
     }
 }

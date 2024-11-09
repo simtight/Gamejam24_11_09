@@ -9,9 +9,7 @@ public class Goal : MonoBehaviour
 {
 
     [SerializeField] private Collider2D m_player;
-    [SerializeField] private TextMeshProUGUI m_goalText;
     [SerializeField] private CanvasGroup goalBackgroundImageCanvasGroup;
-    [SerializeField] private TextMeshProUGUI goalMeshProUGI;
 
     private float m_timer;
     private float fadeDuration = 1f;
@@ -35,10 +33,10 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        clearFLG = true;
-        Debug.Log("test");
-        m_goalText.SetText("Goal");
-
+        if(m_player == collision)
+        {
+            clearFLG = true;
+        }
     }
 
     private void GoalPerformance()
