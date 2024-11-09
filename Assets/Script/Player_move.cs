@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Player_move : MonoBehaviour
 {
     [SerializeField] GameObject m_player;
+    [SerializeField] Sprite back_girl;
+    [SerializeField] Sprite ago_girl;
+
     
     Rigidbody2D m_Rigidbody;
 
@@ -13,6 +17,7 @@ public class Player_move : MonoBehaviour
     public float x;
     public float y;
     public float speed;
+
 
     // Start is called before the first frame update
     void Start()

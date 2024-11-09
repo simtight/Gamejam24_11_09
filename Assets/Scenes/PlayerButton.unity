@@ -215,10 +215,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 1767422595}
+  back_girl: {fileID: 0}
+  ago_girl: {fileID: 0}
   num: 3
   x: 0
   y: 0
-  speed: 3
+  speed: 300
 --- !u!212 &4664857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -259,7 +261,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -332,8 +334,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e38fac44c751449488f8513e51bbd0ef, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -352,8 +354,8 @@ Transform:
   m_GameObject: {fileID: 68001370}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.82, y: -2.24, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.43, y: -2.75, z: 0}
+  m_LocalScale: {x: 1.71, y: 1.48, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -406,6 +408,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  back_girl: {fileID: 21300000, guid: e38fac44c751449488f8513e51bbd0ef, type: 3}
+  ago_girl: {fileID: 21300000, guid: 128c5b81dc4c8cf4b8b486b965db8c1d, type: 3}
+  x: 0
+  y: 0
 --- !u!50 &68001375
 Rigidbody2D:
   serializedVersion: 4
@@ -527,7 +533,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -548,8 +554,8 @@ Transform:
   m_GameObject: {fileID: 80116578}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.194443, y: -0.8468342, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.55, y: 0.32, z: 0}
+  m_LocalScale: {x: 1.0057001, y: 0.996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -673,10 +679,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 80116578}
+  back_girl: {fileID: 0}
+  ago_girl: {fileID: 0}
   num: 3
   x: 0
   y: 0
-  speed: 300
+  speed: 0.04
 --- !u!212 &352909556
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -821,10 +829,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 1767422595}
+  back_girl: {fileID: 0}
+  ago_girl: {fileID: 0}
   num: 1
   x: 0
   y: 0
-  speed: 3
+  speed: 300
 --- !u!212 &466449325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -865,7 +875,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -969,10 +979,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 1767422595}
+  back_girl: {fileID: 0}
+  ago_girl: {fileID: 0}
   num: 0
   x: 0
   y: 0
-  speed: 3
+  speed: 300
 --- !u!212 &547728604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1013,7 +1025,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1117,10 +1129,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 80116578}
+  back_girl: {fileID: 0}
+  ago_girl: {fileID: 0}
   num: 1
   x: 0
   y: 0
-  speed: 300
+  speed: 0.04
 --- !u!212 &686515120
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1357,10 +1371,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 1767422595}
+  back_girl: {fileID: 0}
+  ago_girl: {fileID: 0}
   num: 2
   x: 0
   y: 0
-  speed: 3
+  speed: 300
 --- !u!212 &753336384
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1401,7 +1417,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1505,10 +1521,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 80116578}
+  back_girl: {fileID: 0}
+  ago_girl: {fileID: 0}
   num: 2
   x: 0
   y: 0
-  speed: 300
+  speed: 0.04
 --- !u!212 &1081924283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1586,8 +1604,8 @@ Transform:
   m_GameObject: {fileID: 1190115207}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.38, y: 3.1956468, z: 0.029802928}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.4460707, y: 3.175233, z: 0.029802928}
+  m_LocalScale: {x: 1.0057001, y: 0.996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 547728601}
@@ -1871,10 +1889,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 80116578}
+  back_girl: {fileID: 0}
+  ago_girl: {fileID: 0}
   num: 0
   x: 0
   y: 0
-  speed: 300
+  speed: 0.04
 --- !u!212 &2024681937
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1932,8 +1952,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 716409171}
-  - {fileID: 1190115208}
-  - {fileID: 80116582}
   - {fileID: 1971630655}
   - {fileID: 68001372}
   - {fileID: 1767422599}
+  - {fileID: 1190115208}
+  - {fileID: 80116582}
