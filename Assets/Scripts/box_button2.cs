@@ -10,9 +10,15 @@ public class box_button2 : MonoBehaviour
     [SerializeField] GameObject door22;
 
     private bool door_open;
+    private bool played;
+
+    AudioSource audio;
+    public AudioClip SE;
     // Start is called before the first frame update
     void Start()
     {
+        played = false;
+        audio = GetComponent<AudioSource>();
         door_open = true;
     }
 
@@ -27,17 +33,20 @@ public class box_button2 : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Box"))
+        if (collision.gameObject.CompareTag("Box") && !played)
         {
             door_open = false;
+            audio.PlayOneShot(SE);
+            played = !played;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Box"))
+        if (collision.gameObject.CompareTag("Box") && played)
         {
             door_open = true;
+            played = !played;
         }
     }
 }
