@@ -22,8 +22,7 @@ public class player : MonoBehaviour
         //動いてなければアニメーションの停止
         //if (x != 0 || y != 0)
         //{
-            anim.SetFloat("X", x);
-            anim.SetFloat("Y", y);
+            
         //}
         
         transform.position = new Vector3(Mathf.Clamp(this.transform.position.x + x, -8.86f, 8.86f),

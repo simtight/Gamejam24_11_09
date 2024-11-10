@@ -16,7 +16,12 @@ public class PlayerBoxGrab : MonoBehaviour
     private bool isLeft = false;
     private bool isDown = false;
     private bool isUp = false;
+    private Animator anim;
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     private void Update()
     {
         isRight = false;
@@ -63,13 +68,13 @@ public class PlayerBoxGrab : MonoBehaviour
         if (canGrab&&hitCollider!=null)
         {
             Debug.Log("Grab");
-            hitCollider.transform.position = new Vector3(this.transform.position.x + grabPoint.offset.x*1.4f, this.transform.position.y + grabPoint.offset.y*1.4f, 0);
+            hitCollider.transform.position = new Vector3(this.transform.position.x + grabPoint.offset.x*this.transform.localScale.x, this.transform.position.y + grabPoint.offset.y* this.transform.localScale.y, 0);
             hitCollider.GetComponent<BoxCollider2D>().size = new Vector2(0.2f, 0.2f);
             
             if(grabPoint.offset.x > 0)
             {
-                boxCollider.offset = new Vector2(grabPoint.offset.x+0.25f,grabPoint.offset.y);
-                boxCollider.size = new Vector2(0.1f, 1f);
+                boxCollider.offset = new Vector2(grabPoint.offset.x+0.12f,grabPoint.offset.y);
+                boxCollider.size = new Vector2(0.1f, 0.33f);
                 if (isRight)
                 {
                     rb.velocity = new Vector3(speed, 0, 0);
@@ -81,8 +86,8 @@ public class PlayerBoxGrab : MonoBehaviour
             }
             else if(grabPoint.offset.x < 0)
             {
-                boxCollider.offset = new Vector2(grabPoint.offset.x - 0.25f, grabPoint.offset.y);
-                boxCollider.size = new Vector2(0.1f, 1f);
+                boxCollider.offset = new Vector2(grabPoint.offset.x - 0.12f, grabPoint.offset.y);
+                boxCollider.size = new Vector2(0.1f, 0.33f);
                 if (isRight)
                 {
                     rb.velocity = new Vector3(speed, 0, 0);
@@ -94,8 +99,8 @@ public class PlayerBoxGrab : MonoBehaviour
             }
             else if(grabPoint.offset.y > 0)
             {
-                boxCollider.offset = new Vector2(grabPoint.offset.x, grabPoint.offset.y+0.25f);
-                boxCollider.size = new Vector2(1f, 0.1f);
+                boxCollider.offset = new Vector2(grabPoint.offset.x, grabPoint.offset.y+0.16f);
+                boxCollider.size = new Vector2(0.33f, 0.1f);
                 if (isUp)
                 {
                     rb.velocity = new Vector3(0,speed, 0);
@@ -107,8 +112,8 @@ public class PlayerBoxGrab : MonoBehaviour
             }
             else if(grabPoint.offset.y < 0)
             {
-                boxCollider.offset = new Vector2(grabPoint.offset.x, grabPoint.offset.y - 0.25f);
-                boxCollider.size = new Vector2(1f, 0.1f);
+                boxCollider.offset = new Vector2(grabPoint.offset.x, grabPoint.offset.y - 0.16f);
+                boxCollider.size = new Vector2(0.33f, 0.1f);
                 if (isUp)
                 {
                     rb.velocity = new Vector3(0, speed, 0);
@@ -118,6 +123,7 @@ public class PlayerBoxGrab : MonoBehaviour
                     rb.velocity = new Vector3(0, -speed, 0);
                 }
             }
+            
         }
         else
         {
@@ -125,26 +131,36 @@ public class PlayerBoxGrab : MonoBehaviour
             if (isRight)
             {
                 Debug.Log("Right");
-                grabPoint.offset = new Vector2(0.7f, 0);
+                grabPoint.offset = new Vector2(0.4f, -0.1f);
+                anim.SetFloat("X", grabPoint.offset.x);
+                anim.SetFloat("Y", grabPoint.offset.y);
                 rb.velocity = new Vector3(speed, 0, 0);
             }
             else if(isLeft)
             {
                 Debug.Log("Left");
-                grabPoint.offset = new Vector2(-0.7f, 0);
+                grabPoint.offset = new Vector2(-0.4f, -0.1f);
+                anim.SetFloat("X", grabPoint.offset.x);
+                anim.SetFloat("Y", grabPoint.offset.y);
                 rb.velocity = new Vector3(-speed, 0, 0);
 
             }
             else if (isUp)
             {
-                grabPoint.offset= new Vector2(0f, 0.95f);
+                grabPoint.offset= new Vector2(0f, 0.55f);
+                anim.SetFloat("X", grabPoint.offset.x);
+                anim.SetFloat("Y", grabPoint.offset.y);
                 rb.velocity = new Vector3(0, speed, 0);
             }
             else if(isDown)
             {
-                grabPoint.offset = new Vector2(0.0f, -0.95f);
+                grabPoint.offset = new Vector2(0.0f, -0.65f);
+                anim.SetFloat("X", grabPoint.offset.x);
+                anim.SetFloat("Y", grabPoint.offset.y);
                 rb.velocity = new Vector3(0, -speed, 0);
             }
+            //anim.SetFloat("X", grabPoint.offset.x);
+            //anim.SetFloat("Y", grabPoint.offset.y);
         }
     }
     
