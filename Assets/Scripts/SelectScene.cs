@@ -17,12 +17,12 @@ public class SelectScene : MonoBehaviour
     public void StageSelectTwo()
     {
         //ステージ２のシーン名入力
-        //SceneManager.LoadScene(3);
+        SceneManager.LoadScene(3);
     }
     public void StageSelectThree()
     {
         //ステージ３のシーン名入力
-        //SceneManager.LoadScene(4);
+        SceneManager.LoadScene(4);
     }
     public void ToTitle() 
     {
