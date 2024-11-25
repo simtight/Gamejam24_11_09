@@ -31,9 +31,9 @@ public class box_button : MonoBehaviour
     { 
         if(collision.gameObject.CompareTag("Box") /*&& !played*/)
         {
-            audio.PlayOneShot(SE);
             door_open = false;
             played = !played;
+            audio.PlayOneShot(SE);
         }
     }
 

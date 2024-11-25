@@ -2402,7 +2402,7 @@ GameObject:
   - component: {fileID: 918847667}
   m_Layer: 0
   m_Name: door
-  m_TagString: Untagged
+  m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2895,7 +2895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 918847663}
-  SE: {fileID: 8300000, guid: 049586aa6589d4043813c75232eb1de2, type: 3}
+  SE: {fileID: 0}
 --- !u!61 &1100141479
 BoxCollider2D:
   m_ObjectHideFlags: 0
